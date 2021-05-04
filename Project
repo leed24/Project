@@ -1,0 +1,29 @@
+import java.util.*;
+import java.io.*;
+// this project will get the hours of energy used for the week and get the yearly energy used
+public class project {
+    public static void main (String [] args)throws FileNotFoundException{
+        File prices= new File ("C:\\Users\\Tanki\\Desktop\\JavaSem2\\electricprices.txt");
+        Scanner input= new Scanner (System.in);
+        Scanner price = new Scanner (prices);
+        double eprice= 0;
+        double sum=0;
+    
+        String trash="";
+        while (price.hasNextLine()){
+            Scanner line = new Scanner (price.nextLine());
+            eprice = line.nextDouble();
+        }
+        Scanner namearray =new Scanner (System.in);
+        System.out.print("What is your name: (First Last):");
+        String namearrays = namearray.nextLine();
+        Scanner hours = new Scanner (System.in);
+        double [] arrayhour = new double [7];
+       for (int i =0; i<7; i++){
+        System.out.print("How many hours of power did you use on day "+(i+1)+ " of the week:");
+        arrayhour[i] = input.nextDouble();
+        
+    }
+    
+    }
+}
