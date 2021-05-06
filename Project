@@ -15,12 +15,16 @@ public class project {
             eprice = line.nextDouble();
         }
         Scanner namearray =new Scanner (System.in);
-        System.out.print("What is your name: (First Last):");
+        System.out.print("What is your name: ");
         String namearrays = namearray.nextLine();
-        double [] hoursmonth ={867, 840, 835, 860, 830};
-        
-       
-        
+        int [] hoursmonth ={867, 840, 835, 860, 830};//monthly hours
+        int index;  
+        String [] names= {"Tom", "Jeff", "Daniel", "Jack", "Bob"};
+    for (int i = 0; i < hoursmonth.length; i++) {
+    if (namearrays.contains(names[i])) {
+    index= hoursmonth[i];
+    }}
+    project2 pricing = new project2(namearrays,eprice,index);
         }
     }
 
