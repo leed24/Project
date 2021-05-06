@@ -1,0 +1,14 @@
+public class project2 {
+    private double monthly;
+    private double yearly;
+public project2(String namearrays, double eprice, int index) {
+    }
+public void calculate(String name1, double eprice2, int index2){
+    String name=name1;
+    double eprice3=eprice2;
+    int index3=index2;
+     monthly=(index3*eprice3);
+    yearly=monthly*12;
+}
+
+}
