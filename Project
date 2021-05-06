@@ -17,13 +17,10 @@ public class project {
         Scanner namearray =new Scanner (System.in);
         System.out.print("What is your name: (First Last):");
         String namearrays = namearray.nextLine();
-        Scanner hours = new Scanner (System.in);
-        double [] arrayhour = new double [7];
-       for (int i =0; i<7; i++){
-        System.out.print("How many hours of power did you use on day "+(i+1)+ " of the week:");
-        arrayhour[i] = input.nextDouble();
+        double [] hoursmonth ={867, 840, 835, 860, 830};
         
+       
+        
+        }
     }
-    
-    }
-}
+
