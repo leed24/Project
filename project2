@@ -1,14 +1,22 @@
 public class project2 {
-    private double monthly;
-    private double yearly;
+    private String name;
+    private double eprice2;
+    private int index2;
+
 public project2(String namearrays, double eprice, int index) {
-    }
-public void calculate(String name1, double eprice2, int index2){
-    String name=name1;
-    double eprice3=eprice2;
-    int index3=index2;
-     monthly=(index3*eprice3);
-    yearly=monthly*12;
+    name=namearrays;
+     eprice2=eprice;
+     index2=index;   
+}
+
+public void calculate(){
+    
+    double monthly=(index2*eprice2);
+  double  yearly=monthly*12;
+  System.out.print("The monthly price for "+name+" energy usage is: ");
+  System.out.printf("'%5.2f'%n", monthly);
+  System.out.print("The yearly price for "+name+" energy usage is: ");
+  System.out.printf("'%5.2f'%n", yearly);
 }
 
 }
