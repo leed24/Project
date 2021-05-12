@@ -8,8 +8,6 @@ public class project {
         Scanner price = new Scanner (prices);
         double eprice= 0;
         double sum=0;
-    
-        String trash="";
         while (price.hasNextLine()){
             Scanner line = new Scanner (price.nextLine());
             eprice = line.nextDouble();
@@ -17,14 +15,21 @@ public class project {
         Scanner namearray =new Scanner (System.in);
         System.out.print("What is your name: ");
         String namearrays = namearray.nextLine();
-        int [] hoursmonth ={867, 840, 835, 860, 830};//monthly hours
-        int index;  
-        String [] names= {"Tom", "Jeff", "Daniel", "Jack", "Bob"};
+        int [] hoursmonth ={867, 840, 835, 860, 830, 900, 929};//monthly hours
+        int index=0;  
+        String [] names= {"Tom", "Jeff", "Daniel", "Jack", "Bob", "Alex", "Isabella"};
     for (int i = 0; i < hoursmonth.length; i++) {
     if (namearrays.contains(names[i])) {
     index= hoursmonth[i];
-    }}
-    project2 pricing = new project2(namearrays,eprice,index);
-        }
+    }
+}
+project2 pricing = new project2(namearrays,eprice,index);
+if (index==0){
+System.out.println("This name isn't in the database.");
+}
+else{
+pricing.calculate();        
+}
+}
     }
 
