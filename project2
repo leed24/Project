@@ -19,4 +19,22 @@ public void calculate(){
   System.out.printf("'%5.2f'%n", yearly);
 }
 
+public String getname(){
+  return name;
+}
+public double geteprice2(){
+  return eprice2;
+}
+public int index2(){
+  return index2;
+}
+public void setName(String newName){
+  name =newName;
+}
+public void setEprice2(double newEprice2){
+  eprice2= newEprice2;
+}
+public void setIndex2(int newIndex2){
+  index2=newIndex2;
+}
 }
