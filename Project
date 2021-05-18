@@ -13,12 +13,12 @@ public class project {
             eprice = line.nextDouble();
         }
         Scanner namearray =new Scanner (System.in);
-        System.out.print("What is your name: ");
+        System.out.print("What is your name (case sensitive):");
         String namearrays = namearray.nextLine();
-        int [] hoursmonth ={867, 840, 835, 860, 830, 900, 929};//monthly hours
+        int [] hoursmonth ={867, 840, 835, 860, 830, 900, 929, 902};//monthly hours
         int index=0;  
-        String [] names= {"Tom", "Jeff", "Daniel", "Jack", "Bob", "Alex", "Isabella"};
-    for (int i = 0; i < hoursmonth.length; i++) {
+        String [] names= {"Tom", "Jeff", "Daniel", "Jack", "Bob", "Alex", "Isabella", "Drew"};
+    for (int i = 0; i < hoursmonth.length; i++) {   
     if (namearrays.contains(names[i])) {
     index= hoursmonth[i];
     }
